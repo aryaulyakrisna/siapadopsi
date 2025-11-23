@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  siapadopsi:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: siapadopsi
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.siapadopsi.rule=Host(`siapadopsi.web.id`)"
+      - "traefik.http.routers.siapadopsi.entrypoints=websecure"
+      - "traefik.http.routers.siapadopsi.tls.certresolver=myresolver"
+      - "traefik.http.services.siapadopsi.loadbalancer.server.port=4002"
+    networks:
+      - traefik_traefik-net
+
+networks:
+  traefik_traefik-net:
+    external: true

@@ -196,7 +196,7 @@ const Result: React.FC<ResultSectionProps> = ({
             <ul className="space-y-4">
               {result.recommendations.map((rec, index) => (
                 <li key={index} className="flex items-start gap-4">
-                  <div className="w-4 h-4 rounded-full bg-(--primary)/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-4 h-4 rounded-full bg-(--primary)/10 flex items-center justify-center shrink-0 mt-0.5">
                     <div className="w-2 h-2 rounded-full bg-(--primary)"></div>
                   </div>
                   <span className="text-sm text-muted-foreground">{rec}</span>
@@ -215,7 +215,7 @@ const Result: React.FC<ResultSectionProps> = ({
             <ul className="space-y-4">
               {result.nextSteps.map((step, index) => (
                 <li key={index} className="flex items-start gap-4">
-                  <div className="w-4 h-4 rounded-full bg-(--primary) flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-4 h-4 rounded-full bg-(--primary) flex items-center justify-center shrink-0 mt-0.5">
                     <span className="text-white text-xs">{index + 1}</span>
                   </div>
                   <span className="text-sm text-muted-foreground">{step}</span>

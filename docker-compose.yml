@@ -3,7 +3,7 @@ version: '3.8'
 services:
   siapadopsi:
     build:
-      context: ./
+      context: ./fe
       dockerfile: Dockerfile
     container_name: siapadopsi
     labels:

@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url("/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: Quicksand-SemiBold;
+  src: url("/fonts/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url("/fonts/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: Quicksand-Light;
+  src: url("/fonts/Quicksand-Light.ttf");
+}
+
+.quicksand-regular,
+* {
+  font-family: Quicksand-Regular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-semibold {
+  font-family: Quicksand-Semibold, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.quicksand-bold {
+  font-family: Quicksand-Bold, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.quicksand-light {
+  font-family: Quicksand-Light, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --background: #fff8f0;
+  --primary: #ff8c42;
+  --secondary: #ffe4d6;
+  --tertiary: #FFE1CD;
+  --quaternary: #FFF4ED;
+  --title: #5D4E37;
+  --text: #a97355;
+
+  --orange: #ff8c42;
+  --yellow: #ffb347;
+  --cream: #FFA07A;
+  --brown: #D2691E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.hover {
+  @apply cursor-pointer;
+}
+
+p, span {
+  @apply max-sm:text-xs md:max-xl:text-sm;
+}

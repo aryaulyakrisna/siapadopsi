@@ -193,7 +193,7 @@ const Result: React.FC<ResultSectionProps> = ({
               </div>
               <H3 text="Rekomendasi untuk Anda" />
             </div>
-            <ul className="space-y-4 p-2">
+            <ul className="space-y-4 px-2">
               {result.recommendations.map((rec, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <div className="w-4 h-4 rounded-full bg-(--primary)/10 flex items-center justify-center shrink-0 mt-0.5">
@@ -212,7 +212,7 @@ const Result: React.FC<ResultSectionProps> = ({
               </div>
               <H3 text="Langkah Selanjutnya" />
             </div>
-            <ul className="space-y-4 p-2">
+            <ul className="space-y-4 px-2">
               {result.nextSteps.map((step, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <div className="w-4 h-4 rounded-full bg-(--primary) flex items-center justify-center shrink-0 mt-0.5">

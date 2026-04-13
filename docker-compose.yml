@@ -8,13 +8,13 @@ services:
     container_name: siapadopsi
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.siapadopsi.rule=Host(`siapadopsi.web.id`)"
+      - "traefik.http.routers.siapadopsi.rule=Host(`siapadopsi.web.id`) || Host(`www.siapadopsi.web.id`)"
       - "traefik.http.routers.siapadopsi.entrypoints=websecure"
       - "traefik.http.routers.siapadopsi.tls.certresolver=myresolver"
       - "traefik.http.services.siapadopsi.loadbalancer.server.port=4002"
     networks:
-      - traefik_traefik-net
+      - traefik-net
 
 networks:
-  traefik_traefik-net:
+  traefik-net:
     external: true

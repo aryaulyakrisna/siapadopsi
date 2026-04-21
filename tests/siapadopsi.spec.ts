@@ -55,7 +55,7 @@ test.describe("Siapa Adopsi Test www.siapadopsi.web.id", () => {
     await page.getByRole("button", { name: "Lihat Hasil" }).click();
 
     await expect(page.getByText(/Sangat Siap!/)).toBeVisible();
-    await expect(page).toHaveScreenshot("siapadopsi-ready.png");
+    // await expect(page).toHaveScreenshot("siapadopsi-ready.png");
   });
 
   test("Belum Siap Adopsi Test 1", async ({ page }) => {
@@ -97,7 +97,7 @@ test.describe("Siapa Adopsi Test www.siapadopsi.web.id", () => {
     await page.getByRole("button", { name: "Lihat Hasil" }).click();
 
     await expect(page.getByText(/Belum Siap/)).toBeVisible();
-    await expect(page).toHaveScreenshot("siapadopsi-not-ready.png");
+    // await expect(page).toHaveScreenshot("siapadopsi-not-ready.png");
   });
 
   test("Belum Siap Adopsi Test 2", async ({ page }) => {

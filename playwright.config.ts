@@ -13,7 +13,7 @@ import { defineConfig, devices } from "@playwright/test";
  */
 export default defineConfig({
   webServer: {
-    command: "npm run dev", // Perintah untuk menjalankan Vite
+    command: "cd fe && npm run dev", // Perintah untuk menjalankan Vite
     url: "http://localhost:5173", // URL default Vite
     reuseExistingServer: true,
     stdout: "ignore",
